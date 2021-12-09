@@ -7,8 +7,8 @@
 @section('page-f-javascript')
     <script src="{{ URL::asset('js/custom/apps/customers/categoriesUpdate.js') }}"></script>
     <script>
-        document.getElementById("submitDeletarCategoria").onclick = function() {
-            document.getElementById("deletarCategoria").submit();
+        document.getElementById("submitDeletarServico").onclick = function() {
+            document.getElementById("deletarServico").submit();
         }
     </script>
 @endsection
@@ -25,11 +25,11 @@
                     <div class="d-flex flex-center flex-column mb-5">
                         <!--begin::Name-->
                         <a href="#" class="fs-3 text-gray-800 text-hover-primary fw-bolder mb-1">
-                            {{ $category->name }}
+                            {{ $service->name }}
                         </a>
                         <!--end::Name-->
                         <!--begin::Position-->
-                        <div class="fs-5 fw-bold text-muted mb-6">{{ $category->description }}</div>
+                        <div class="fs-5 fw-bold text-muted mb-6">{{ $service->description }}</div>
                         <!--end::Position-->
                         <!--begin::Info-->
                         <div class="d-flex flex-wrap flex-center">
@@ -58,7 +58,7 @@
                                 <!--end::Svg Icon-->
                             </span>
                         </div>
-                        <span data-bs-toggle="tooltip" data-bs-trigger="hover" title="" data-bs-original-title="Editar detalhes da categoria">
+                        <span data-bs-toggle="tooltip" data-bs-trigger="hover" title="" data-bs-original-title="Editar detalhes do serviço">
                             <a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_update_customer">Editar</a>
                         </span>
                     </div>
@@ -68,8 +68,8 @@
                     <div id="kt_customer_view_details" class="collapse show">
                         <div class="py-5 fs-6">
                             <!--begin::Details item-->
-                            <div class="fw-bolder mt-5">ID da categoria</div>
-                            <div class="text-gray-600">ID-{{ $category->id }}</div>
+                            <div class="fw-bolder mt-5">ID do serviço</div>
+                            <div class="text-gray-600">ID-{{ $service->id }}</div>
                             <!--begin::Details item-->
                         </div>
                     </div>
@@ -106,10 +106,10 @@
                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold py-4 w-250px fs-6" data-kt-menu="true" style="">
                         <!--begin::Menu item-->
                         <div class="menu-item px-5">
-                            <form action="{{ route('painel.categorias.destroy', $category->url) }}" method="post" id="deletarCategoria">
+                            <form action="{{ route('painel.servicos.destroy', $service->url) }}" method="post" id="deletarServico">
                                 @csrf
                                 @method('delete')
-                                <a id="submitDeletarCategoria" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Deletar</a>
+                                <a id="submitDeletarServico" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Deletar</a>
                             </form>
                         </div>
                         <!--end::Menu item-->
@@ -391,13 +391,13 @@
             <!--begin::Modal content-->
             <div class="modal-content">
                 <!--begin::Form-->
-                <form class="form" method="post" action="{{ route('painel.categorias.update', $category->url) }}" id="kt_modal_update_customer_form">
+                <form class="form" method="post" action="{{ route('painel.servicos.update', $service->url) }}" id="kt_modal_update_customer_form">
                     @csrf
                     @method('put')
                     <!--begin::Modal header-->
                     <div class="modal-header" id="kt_modal_update_customer_header">
                         <!--begin::Modal title-->
-                        <h2 class="fw-bolder">Atualizar categoria</h2>
+                        <h2 class="fw-bolder">Atualizar serviço</h2>
                         <!--end::Modal title-->
                         <!--begin::Close-->
                         <div id="kt_modal_update_customer_close" class="btn btn-icon btn-sm btn-active-icon-primary">
@@ -418,7 +418,7 @@
                         <!--begin::Scroll-->
                         <div class="d-flex flex-column scroll-y me-n7 pe-7" id="kt_modal_update_customer_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_update_customer_header" data-kt-scroll-wrappers="#kt_modal_update_customer_scroll" data-kt-scroll-offset="300px">
                             <!--begin::User form-->
-                            @include('pages.produtos.categorias._includes.form')
+                            @include('pages.produtos.servicos._includes.form')
                             <!--end::User form-->
                         </div>
                         <!--end::Scroll-->

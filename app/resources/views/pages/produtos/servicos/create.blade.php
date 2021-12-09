@@ -79,11 +79,11 @@
                 <div class="row mt-5">
                     <div class="col-lg-6">
                         <label for="amount" class="form-label">Valor do serviço</label>
-                        <input value="{{ old('amount') }}" type="text" name="amount" class="form-control form-control-solid" placeholder="Insira o valor do serviço"/>
+                        <input value="{{ old('amount') }}" data-inputmask="'mask': 'R$ 999.999,99', 'numericInput': 'numericInput'" type="text" name="amount" class="form-control form-control-solid" placeholder="Insira o valor do serviço"/>
                     </div>
                     <div class="col-lg-6 mt-5 mt-lg-0">
                         <label for="amount_min" class="form-label">Valor mínimo do serviço</label>
-                        <input value="{{ old('amount_min') }}" type="text" name="amount_min" class="form-control form-control-solid" placeholder="Insira o valor mínimo do serviço"/>
+                        <input value="{{ old('amount_min') }}" data-inputmask="'mask': 'R$ 999.999,99', 'numericInput': 'numericInput'" type="text" name="amount_min" class="form-control form-control-solid" placeholder="Insira o valor mínimo do serviço"/>
                     </div>
                 </div>
 

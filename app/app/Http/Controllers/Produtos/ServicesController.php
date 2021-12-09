@@ -49,7 +49,6 @@ class ServicesController extends Controller
      */
     public function store(ServiceRequest $request)
     {
-        dd($request);
         $service = $this->service;
 
         $service->name = $request->name;
@@ -71,9 +70,10 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($url)
     {
-        //
+        $service = $this->service->where('url', $url)->first();
+        return view('pages.produtos.servicos.show', compact('service'));
     }
 
     /**

@@ -23,8 +23,8 @@ class CreateServicesTable extends Migration
             $table->text('description')->nullable(); // Referencia da categoria
             $table->double('amount', 10, 2)->nullable(); // Valor do serviço
             $table->double('amount_min', 10, 2)->nullable(); // Valor minimo de negociação
-            $table->date('deadline_deal')->nullable(); // Prazo de entrega negociado
-            $table->date('deadline_real')->nullable(); // Prazo de entrega real
+            $table->string('deadline_deal')->nullable(); // Prazo de entrega negociado
+            $table->string('deadline_real')->nullable(); // Prazo de entrega real
 
             $table->timestamps();
             $table->softDeletes();

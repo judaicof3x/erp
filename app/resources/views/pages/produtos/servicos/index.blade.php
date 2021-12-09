@@ -138,7 +138,7 @@
                                     <!--end::Checkbox-->
                                     <!--begin::Name=-->
                                     <td class="text-center">
-                                        <a href="{{ route('painel.categorias.show', $service->url) }}" class="text-gray-600 text-hover-primary mb-1">
+                                        <a href="{{ route('painel.servicos.show', $service->url) }}" class="text-gray-600 text-hover-primary mb-1">
                                             {{ $service->name }}
                                         </a>
                                     </td>
@@ -173,12 +173,12 @@
                                         <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
                                             <!--begin::Menu item-->
                                             <div class="menu-item px-3">
-                                                <a href="{{ route('painel.categorias.show', $service->url) }}" class="menu-link px-3">Visualizar</a>
+                                                <a href="{{ route('painel.servicos.show', $service->url) }}" class="menu-link px-3">Visualizar</a>
                                             </div>
                                             <!--end::Menu item-->
                                             <!--begin::Menu item-->
                                             <div class="menu-item px-3">
-                                                <form action="{{ route('painel.categorias.destroy', $service->url) }}" method="post" id="deletarServico">
+                                                <form action="{{ route('painel.servicos.destroy', $service->url) }}" method="post" id="deletarServico">
                                                     @csrf
                                                     @method('delete')
                                                     <a id="submitDeletarServico" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Deletar</a>

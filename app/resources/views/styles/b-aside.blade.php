@@ -300,7 +300,7 @@
                                 <span class="menu-title">Novo serviço</span>
                             </a>
                         </div>
-                        <div class="menu-item @if(request()->routeIs('painel.servicos.index')) here @endif">
+                        <div class="menu-item @if(request()->routeIs('painel.servicos.index') OR request()->routeIs('painel.servicos.create')) here @endif">
                             <a class="menu-link" href="{{ route('painel.servicos.index') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
