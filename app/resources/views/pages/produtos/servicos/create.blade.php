@@ -62,7 +62,7 @@
                         <label for="category_id" class="required form-label">Categoria do serviço</label>
                         <select name="category_id" aria-label="Insira a categoria do serviço" data-control="select2" data-hide-search="true" data-placeholder="Insira a categoria do serviço" class="form-select form-select-solid form-select-lg select2-hidden-accessible" data-select2-id="select2-data-12-ob7j" tabindex="-1" aria-hidden="true">
                             @foreach($categories as $category)
-                                <option value="{{ $category->id }}" @if(old('category_id') == $category->id) selected @endif data-select2-id="select2-data-309-60fv">
+                                <option value="{{ $category->id }}" @if(old('category_id') == $category->id) selected @endif">
                                     {{ $category->name }}</option>
                             @endforeach
                         </select>
@@ -89,12 +89,61 @@
 
                 <div class="row mt-5">
                     <div class="col-lg-6">
-                        <label for="deadline_deal" class="form-label">Prazo de entrega negociado</label>
-                        <input value="{{ old('deadline_deal') }}" type="text" name="deadline_deal" class="form-control form-control-solid" placeholder="Insira prazo de entrega negociado"/>
+                        <label for="deadline_deal" class="form-label">Prazo de entrega negociado com o cliente</label>
+                        <!--begin::Dialer-->
+                        <div class="input-group"
+                             data-kt-dialer="true"
+                             data-kt-dialer-min="1"
+                             data-kt-dialer-max="365"
+                             data-kt-dialer-step="1"
+                             data-kt-dialer-suffix=" dias">
+
+                            <!--begin::Decrease control-->
+                            <button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+                                <i class="bi bi-dash fs-1"></i>
+                            </button>
+                            <!--end::Decrease control-->
+
+                            <!--begin::Input control-->
+                            <input value="{{ old('deadline_deal') }}" type="text" name="deadline_deal" class="form-control form-control-solid" readonly placeholder="Insira prazo de entrega negociado" data-kt-dialer-control="input"/>
+                            <!--end::Input control-->
+
+                            <!--begin::Increase control-->
+                            <button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+                                <i class="bi bi-plus fs-1"></i>
+                            </button>
+                            <!--end::Increase control-->
+                        </div>
+                        <!--end::Dialer-->
                     </div>
+
                     <div class="col-lg-6 mt-5 mt-lg-0">
                         <label for="deadline_real" class="form-label">Prazo de entrega real</label>
-                        <input value="{{ old('deadline_real') }}" type="text" name="deadline_real" class="form-control form-control-solid" placeholder="Insira o prazo de entrega real"/>
+                        <!--begin::Dialer-->
+                        <div class="input-group"
+                             data-kt-dialer="true"
+                             data-kt-dialer-min="1"
+                             data-kt-dialer-max="365"
+                             data-kt-dialer-step="1"
+                             data-kt-dialer-suffix=" dias">
+
+                            <!--begin::Decrease control-->
+                            <button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+                                <i class="bi bi-dash fs-1"></i>
+                            </button>
+                            <!--end::Decrease control-->
+
+                            <!--begin::Input control-->
+                            <input value="{{ old('deadline_real') }}" type="text" name="deadline_real" class="form-control form-control-solid" readonly placeholder="Insira prazo de entrega real" data-kt-dialer-control="input"/>
+                            <!--end::Input control-->
+
+                            <!--begin::Increase control-->
+                            <button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+                                <i class="bi bi-plus fs-1"></i>
+                            </button>
+                            <!--end::Increase control-->
+                        </div>
+                        <!--end::Dialer-->
                     </div>
                 </div>
 

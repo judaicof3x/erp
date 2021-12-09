@@ -49,6 +49,7 @@ class ServicesController extends Controller
      */
     public function store(ServiceRequest $request)
     {
+        dd($request);
         $service = $this->service;
 
         $service->name = $request->name;
