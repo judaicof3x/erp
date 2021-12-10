@@ -314,8 +314,8 @@
                 <div class="card-header border-0 pt-5">
                     <!--begin::Title-->
                     <h3 class="card-title align-items-start flex-column">
-                        <span class="card-label fw-bolder fs-3 mb-1">Recent Statistics</span>
-                        <span class="text-muted fw-bold fs-7">More than 400 new members</span>
+                        <span class="card-label fw-bolder fs-3 mb-1">Últimas vendas</span>
+                        <span class="text-muted fw-bold fs-7">Subiu 15 vendas em relação ao último mês</span>
                     </h3>
                     <!--end::Title-->
                     <!--begin::Toolbar-->

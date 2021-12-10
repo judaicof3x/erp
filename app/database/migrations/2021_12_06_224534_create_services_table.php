@@ -21,8 +21,8 @@ class CreateServicesTable extends Migration
             $table->string('url')->unique();
             $table->unsignedBigInteger('category_id'); // Referencia da categoria
             $table->text('description')->nullable(); // Referencia da categoria
-            $table->double('amount', 10, 2)->nullable(); // Valor do serviço
-            $table->double('amount_min', 10, 2)->nullable(); // Valor minimo de negociação
+            $table->string('amount')->nullable(); // Valor do serviço
+            $table->string('amount_min')->nullable(); // Valor minimo de negociação
             $table->string('deadline_deal')->nullable(); // Prazo de entrega negociado
             $table->string('deadline_real')->nullable(); // Prazo de entrega real
 

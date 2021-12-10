@@ -9,6 +9,11 @@ Route::middleware(['auth:sanctum', 'verified'])
 
         // Pages
         Route::get('', [App\Http\Controllers\PagesController::class, 'home'])->name('home');
+        Route::get('/planos', [App\Http\Controllers\PagesController::class, 'planIndex'])->name('planIndex');
+        Route::get('/planos/cadastrar', [App\Http\Controllers\PagesController::class, 'planCreate'])->name('planCreate');
+        Route::get('/planos/ver', [App\Http\Controllers\PagesController::class, 'planShow'])->name('planShow');
+        Route::get('/planos/ver/2', [App\Http\Controllers\PagesController::class, 'planShow2'])->name('planShow2');
+        Route::get('/planos/ver/3', [App\Http\Controllers\PagesController::class, 'planShow3'])->name('planShow3');
 
         // Clientes
         Route::group(['as' => 'clientes.', 'prefix' => 'clientes'], function() {

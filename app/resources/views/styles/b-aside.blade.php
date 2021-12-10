@@ -242,7 +242,7 @@
                         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Produtos</span>
                     </div>
                 </div>
-                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion @if(request()->routeIs('painel.planIndex') || request()->routeIs('painel.planCreate') || request()->routeIs('painel.planShow')) hover show @endif">
                     <span class="menu-link">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
@@ -258,16 +258,16 @@
                         <span class="menu-arrow"></span>
                     </span>
                     <div class="menu-sub menu-sub-accordion">
-                        <div class="menu-item">
-                            <a class="menu-link" href="#">
+                        <div class="menu-item @if(request()->routeIs('painel.planCreate')) here @endif">
+                            <a class="menu-link" href="{{ route('painel.planCreate') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title">Novo plano</span>
                             </a>
                         </div>
-                        <div class="menu-item">
-                            <a class="menu-link" href="#">
+                        <div class="menu-item @if(request()->routeIs('painel.planIndex')) here @endif">
+                            <a class="menu-link" href="{{ route('painel.planIndex') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -300,7 +300,7 @@
                                 <span class="menu-title">Novo serviço</span>
                             </a>
                         </div>
-                        <div class="menu-item @if(request()->routeIs('painel.servicos.index') OR request()->routeIs('painel.servicos.create')) here @endif">
+                        <div class="menu-item @if(request()->routeIs('painel.servicos.index') OR request()->routeIs('painel.servicos.show')) here @endif">
                             <a class="menu-link" href="{{ route('painel.servicos.index') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>

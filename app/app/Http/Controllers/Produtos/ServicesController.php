@@ -105,8 +105,13 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($url)
     {
-        //
+        if (!$service = $this->service->where('url', $url)->first()){
+            return redirect()->back();
+        }
+
+        $service->delete();
+        return redirect()->route('painel.servicos.index');
     }
 }

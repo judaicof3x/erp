@@ -145,12 +145,12 @@
                                     <!--end::Name=-->
                                     <!--begin::Serviços=-->
                                     <td class="text-center">
-                                        5
+                                        1
                                     </td>
                                     <!--end::Serviços=-->
                                     <!--begin::Contratos=-->
                                     <td class="text-center text-success">
-                                        15
+                                        0
                                     </td>
                                     <!--end::Contratos=-->
                                     <!--begin::Date=-->

@@ -25,11 +25,11 @@
                     <div class="d-flex flex-center flex-column mb-5">
                         <!--begin::Name-->
                         <a href="#" class="fs-3 text-gray-800 text-hover-primary fw-bolder mb-1">
-                            {{ $service->name }}
+                            Plano Avançado
                         </a>
                         <!--end::Name-->
                         <!--begin::Position-->
-                        <div class="fs-5 fw-bold text-muted mb-6">{{ $service->description }}</div>
+                        <div class="fs-5 fw-bold text-muted mb-6">Site institucional, página de Captura, 5 posts por semana (posts de segunda a sexta), 3 stories, 2 videos animados, 2 vídeos e gerenciamento das redes sociais com atendimento 2.0</div>
                         <!--end::Position-->
                     </div>
                     <!--end::Summary-->
@@ -53,12 +53,12 @@
                     <div id="kt_customer_view_details" class="collapse show">
                         <div class="py-5 fs-6">
                             <!--begin::Details item-->
-                            <div class="fw-bolder mt-5">ID do serviço</div>
-                            <div class="text-gray-600">ID-{{ $service->id }}</div>
+                            <div class="fw-bolder mt-5">ID do plano</div>
+                            <div class="text-gray-600">ID-1</div>
                             <!--begin::Details item-->
                             <!--begin::Details item-->
-                            <div class="fw-bolder mt-5">Valor do serviço</div>
-                            <div class="text-gray-600">R$ {{ $service->amount }}</div>
+                            <div class="fw-bolder mt-5">Valor do plano</div>
+                            <div class="text-gray-600">R$ 3.800,00</div>
                             <!--begin::Details item-->
                         </div>
                     </div>
@@ -80,7 +80,7 @@
             <!--begin::Modal content-->
             <div class="modal-content">
                 <!--begin::Form-->
-                <form class="form" method="post" action="{{ route('painel.servicos.update', $service->url) }}" id="kt_modal_update_customer_form">
+                <form class="form" method="post" action="#" id="kt_modal_update_customer_form">
                     @csrf
                     @method('put')
                     <!--begin::Modal header-->

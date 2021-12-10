@@ -110,13 +110,13 @@
                                     Serviço
                                 </th>
                                 <th class="min-w-125px sorting text-center" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 130.484px;">
-                                    Nº de serviços
+                                    Valor
                                 </th>
                                 <th class="min-w-125px sorting text-center" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Company: activate to sort column ascending" style="width: 144.625px;">
-                                    Nº de contratos
+                                    Nº de vendas
                                 </th>
                                 <th class="min-w-125px sorting text-center" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Created Date: activate to sort column ascending" style="width: 165.625px;">
-                                    Cadastrada em
+                                    Cadastrado em
                                 </th>
                                 <th class="min-w-125px sorting_disabled text-center" rowspan="1" colspan="1" aria-label="Actions" style="width: 100.766px;">
                                     Ações
@@ -145,12 +145,12 @@
                                     <!--end::Name=-->
                                     <!--begin::Serviços=-->
                                     <td class="text-center">
-                                        5
+                                        {{ $service->amount }}
                                     </td>
                                     <!--end::Serviços=-->
                                     <!--begin::Contratos=-->
                                     <td class="text-center text-success">
-                                        15
+                                        0
                                     </td>
                                     <!--end::Contratos=-->
                                     <!--begin::Date=-->
