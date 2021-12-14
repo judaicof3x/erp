@@ -11,6 +11,7 @@ class Address extends Model
 
     protected $fillable = [
         'client_id',
+        'type',
         'address',
         'number',
         'complement',
@@ -18,13 +19,6 @@ class Address extends Model
         'city',
         'state',
         'zip_code',
-        'tenant_address',
-        'tenant_number',
-        'tenant_complement',
-        'tenant_neighborhood',
-        'tenant_city',
-        'tenant_state',
-        'tenant_zip_code',
         'description'
     ];
 

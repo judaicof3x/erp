@@ -89,7 +89,7 @@ class ClientsController extends Controller
      */
     public function show($id)
     {
-        $client = $this->client->find($id);
+        $client = $this->client->where('id', $id)->with('address')->firstOrFail();
         $users = User::all();
         return view('pages.comercial.clientes.show', compact('client', 'users'));
     }
