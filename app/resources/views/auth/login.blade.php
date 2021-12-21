@@ -32,9 +32,9 @@
 				<!--begin::Aside-->
 				<div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative" style="background-image: url('{{ URL::asset('media/backgrounds/others.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
 					<!--begin::Wrapper-->
-					<div class="d-flex flex-column bg-danger position-xl-fixed w-xl-600px">
+					<div class="d-flex flex-column position-xl-fixed w-xl-600px">
 						<!--begin::Content-->
-						<div class="d-flex flex-column text-center p-10 pt-lg-20 bg-dark">
+						<div class="d-flex flex-column text-center p-10 pt-lg-20">
 							<!--begin::Logo-->
 							<a href="#" class="py-9 mb-5">
 								<img alt="Logo" src="{{ URL::asset('media/logos/F3X-Horizontal-Light.png')}}" class="h-90px" />
