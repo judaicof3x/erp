@@ -2,6 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::middleware(['guest'])
+    ->name('auth.')
+    ->prefix('')
+    ->group(function () {
+
+        // Auth
+        Route::get('recuperar', [App\Http\Controllers\AuthController::class, 'recuperar'])->name('senha.recuperar');
+        Route::get('resetar/{token}', [App\Http\Controllers\AuthController::class, 'resetar'])->name('senha.resetar');
+
+});
+
 Route::middleware(['auth:sanctum', 'verified'])
     ->name('painel.')
     ->prefix('')

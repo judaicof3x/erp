@@ -22,7 +22,7 @@
     <!--end::Page Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="{{ URL::asset('plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ URL::asset('css/style.dark.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="@if(auth()->user()->theme === 'dark') {{ URL::asset('css/style.dark.bundle.css') }} @else {{ URL::asset('css/style.bundle.css') }} @endif" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
