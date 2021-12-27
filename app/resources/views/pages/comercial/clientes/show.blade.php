@@ -218,7 +218,7 @@
             </ul>
             <!--end:::Tabs-->
             <!--begin:::Tab content-->
-            <div class="d-none tab-content" id="myTabContent">
+            <div class="d-none  tab-content" id="myTabContent">
                 <!--begin:::Tab pane-->
                 <div class="tab-pane fade active show" id="kt_customer_view_overview_tab" role="tabpanel">
                     <!--begin::Card-->
