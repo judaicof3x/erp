@@ -56,7 +56,7 @@
 		</div>
 		<!--end::Input group-->
 
-		<div class="form-check form-switch form-check-custom form-check-solid form-check-sm mb-3">
+		<div class="form-check form-switch form-check-custom form-check-solid form-check-sm mb-3 d-none">
 			<input value="{{ old('remember') }}" name="remember" id="remember_me" class="form-check-input" type="checkbox"/>
 			<label class="form-check-label" for="remember_me">
 				Manter-me conectado
@@ -67,7 +67,7 @@
 		<button type="submit" class="btn btn-dark col-12">Acessar<i class="fas fa-sign-in-alt fs-2 m-2"></i></button>
 		
 		<!--begin::Wrapper-->
-		<div class="text-center mt-3">
+		<div class="text-center mt-3 d-none">
 			<!--begin::Link-->
 			<a href="{{ route('auth.senha.recuperar') }}" class="link-dark fs-6 sfw-bolder">Esqueceu sua senha ?</a>
 			<!--end::Link-->
