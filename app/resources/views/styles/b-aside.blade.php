@@ -19,7 +19,7 @@
                         <a href="#" class="text-white text-hover-primary fs-6 fw-bold">{{ Auth::user()->surname }}</a>
                         <!--end::Username-->
                         <!--begin::Description-->
-                        <span class="text-gray-600 fw-bold d-block fs-8">{{ Auth::user()->email }}</span>
+                        <span class="text-gray-600 fw-bold d-block fs-8"></span>
                         <!--end::Description-->
                         <!--begin::Label-->
                         <div class="d-inline align-items-center text-success fs-9">
