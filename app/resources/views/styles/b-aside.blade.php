@@ -237,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-item d-none">
+                <div class="menu-item">
                     <div class="menu-content pt-8 pb-2">
                         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Produtos</span>
                     </div>
@@ -276,7 +276,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-kt-menu-trigger="click" class="d-none menu-item menu-accordion @if(request()->routeIs('painel.servicos.index') || request()->routeIs('painel.servicos.create') || request()->routeIs('painel.servicos.show')) hover show @endif">
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion @if(request()->routeIs('painel.servicos.index') || request()->routeIs('painel.servicos.create') || request()->routeIs('painel.servicos.show')) hover show @endif">
                     <span class="menu-link">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/communication/com011.svg-->
@@ -310,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-kt-menu-trigger="click" class="d-none menu-item menu-accordion @if(request()->routeIs('painel.categorias.index') || request()->routeIs('painel.categorias.create') || request()->routeIs('painel.categorias.show')) hover show @endif">
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion @if(request()->routeIs('painel.categorias.index') || request()->routeIs('painel.categorias.create') || request()->routeIs('painel.categorias.show')) hover show @endif">
                     <span class="menu-link">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/communication/com012.svg-->

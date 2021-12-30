@@ -15,7 +15,7 @@
 @section('w-content')
     <!--begin::Row-->
     <div class="row g-5 g-xl-8">
-        Em desenvolvimento  
+        Home em desenvolvimento  
     </div>
     <!--end::Row-->
 @endsection
